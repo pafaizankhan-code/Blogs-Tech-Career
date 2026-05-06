@@ -3,7 +3,7 @@ export const MAIN_SITE = "https://techcareer.site/";
 export const SITE_NAME = "Tech Career IT Solutions LLP";
 export const COMPANY = "Tech Career IT Solutions LLP";
 
-import seo from '../assets/SEOforService.png'
+import ServiceSeo from '../assets/SEOforService.png'
 import commerce from '../assets/Ecommerce.png'
 import UIUX from '../assets/5UIUX.png'
 import Mobile from '../assets/MobileApp.png'
@@ -158,7 +158,7 @@ export const posts = [
     date: "Apr 18, 2026",
     dateISO: "2026-04-18",
     readTime: "11 min read",
-    cover: seo,
+    cover: ServiceSeo,
     featured: false,
     keywords: [
       "local SEO Ahmedabad",
