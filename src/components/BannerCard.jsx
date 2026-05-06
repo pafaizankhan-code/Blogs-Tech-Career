@@ -10,7 +10,7 @@ export default function BannerCard({ post }) {
         src={post.cover}
         alt={post.title}
         loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"
+        className="absolute inset-0 w-full h-full object-contain opacity-90 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"
       />
       <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/55 to-black/10" />
       <span className="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-brand text-white text-[10px] font-medium tracking-wider uppercase">

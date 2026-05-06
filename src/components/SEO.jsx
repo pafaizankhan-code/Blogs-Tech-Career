@@ -25,7 +25,7 @@ export default function SEO({
 }) {
   const fullTitle = title
     ? `${title} | ${SITE_NAME}`
-    : `${SITE_NAME} — Web Development & Digital Marketing Insights`
+    : `${SITE_NAME} Web Development & Digital Marketing Insights`
   const url = `${BASE_URL}${path}`
   const allKeywords = [...new Set([...DEFAULT_KEYWORDS, ...keywords])].join(', ')
 

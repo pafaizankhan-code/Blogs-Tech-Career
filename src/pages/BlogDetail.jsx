@@ -77,19 +77,30 @@ export default function BlogDetail() {
 
       <article ref={articleRef} className="max-w-7xl mx-auto px-5 lg:px-8 pt-6 md:pt-8">
         {/* BRAND ROW */}
-        <div className="flex items-center justify-between mb-10 pb-6 border-b border-black/10">
-          {/* <Logo variant="dark" size="sm" /> */}
-          <div></div>
-          <a
-            href={`${MAIN_SITE}contact`}
-            target="_blank"
-            rel="noreferrer"
-            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-ink text-white text-sm font-medium hover:bg-brand transition"
-          >
-            Hire our team
-            <span aria-hidden>→</span>
-          </a>
-        </div>
+       <div className="flex items-center justify-between mb-10 pb-6 border-b border-black/10">
+  
+  {/* Logo */}
+ <Link to={'/'}>
+  <img
+    src="https://techcareer.site/assets/logo-D3zmFyUA.jpg"
+     alt="Tech Career IT Solution LLP"
+                className="h-16 md:h-18 w-auto select-none"
+                draggable={false}
+  />
+ </Link>
+
+  {/* Button */}
+  <a
+    href={`${MAIN_SITE}contact`}
+    target="_blank"
+    rel="noreferrer"
+    className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-ink text-white text-sm font-medium hover:bg-brand transition"
+  >
+    Hire our team
+    <span aria-hidden>→</span>
+  </a>
+
+</div>
 
         {/* BREADCRUMB */}
         <nav className="text-xs text-ink-soft/60 mb-6 flex items-center gap-2">
@@ -134,7 +145,7 @@ export default function BlogDetail() {
           <img
             src={post.cover}
             alt={post.title}
-            className="w-full h-75 md:h-125 object-cover"
+            className="w-full h-75 md:h-125 object-contain"
           />
         </div>
 

@@ -68,7 +68,7 @@ body {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
 }
-.float-slow { animation: float-slow 6s ease-in-out infinite; }
+.float-slow { animation: float-slow 3s ease-in-out infinite; }
 
 /* Reading progress */
 .reading-progress {

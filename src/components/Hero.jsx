@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { posts, CATEGORIES, MAIN_SITE } from '../data/posts'
 import BannerCard from './BannerCard'
-import Logo from './Logo'
+import logoUrl from '../assets/logo.png'
 
 export default function Hero() {
   const [query, setQuery] = useState('')
@@ -31,11 +32,21 @@ export default function Hero() {
         <div className="absolute top-20 right-32 w-72 h-72 rounded-full bg-brand-300/30 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-40 -left-32 w-96 h-96 rounded-full bg-brand-700/40 blur-3xl pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-5 lg:px-8 pt-8 md:pt-10">
+        <div className="relative max-w-7xl mx-auto px-5 lg:px-8 pt-3 md:pt-4">
           {/* Top bar: brand + Hire CTA */}
-          <div className="flex items-center justify-between mb-12 md:mb-16">
-            {/* <Logo variant="" size="md" /> */}
-            <div></div>
+          <div className="flex items-center justify-between mb-28 md:mb-28 mt-5">
+            <Link
+              to="/"
+              className="inline-flex items-center hover:opacity-85 transition"
+              aria-label="Tech Career IT Solution LLP — Home"
+            >
+              <img
+                src={logoUrl}
+                alt="Tech Career IT Solution LLP"
+                className="h-16 md:h-18 w-auto select-none"
+                draggable={false}
+              />
+            </Link>
             <a
               href={`${MAIN_SITE}contact`}
               target="_blank"
@@ -47,7 +58,6 @@ export default function Hero() {
             </a>
           </div>
 
-        
           {/* Heading */}
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] font-medium leading-[1.05] tracking-tight max-w-5xl mb-10 md:mb-12">
             Best web development &amp; digital marketing{' '}

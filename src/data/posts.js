@@ -1,7 +1,14 @@
 export const BASE_URL = "https://blogs.techcareer.site";
 export const MAIN_SITE = "https://techcareer.site/";
-export const SITE_NAME = "Tech Career Blog";
+export const SITE_NAME = "Tech Career IT Solutions LLP";
 export const COMPANY = "Tech Career IT Solutions LLP";
+
+import seo from '../assets/SEO for Service.png'
+import commerce from '../assets/E-commerce .png'
+import UIUX from '../assets/5 UIUX .png'
+import Mobile from '../assets/Mobile App .png'
+import Branding from '../assets/Branding for.png'
+import Custom from '../assets/Custom Website.png'
 
 export const DEFAULT_KEYWORDS = [
   "web development agency Ahmedabad",
@@ -15,8 +22,7 @@ export const DEFAULT_KEYWORDS = [
   "techcareer.site",
 ];
 
-export const DEFAULT_OG_IMAGE =
-  "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=1200&h=630&fit=crop&q=80";
+export const DEFAULT_OG_IMAGE = Custom;
 
 export const SERVICE_LINKS = [
   { label: "Web Development", href: "https://techcareer.site/web-development" },
@@ -54,7 +60,7 @@ export const posts = [
     date: "May 02, 2026",
     dateISO: "2026-05-02",
     readTime: "7 min read",
-    cover: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=1600&auto=format&fit=crop&q=80",
+    cover: Custom,
     featured: true,
     keywords: [
       "custom website vs template",
@@ -98,7 +104,7 @@ export const posts = [
     date: "Apr 24, 2026",
     dateISO: "2026-04-24",
     readTime: "9 min read",
-    cover: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&auto=format&fit=crop&q=80",
+    cover: commerce,
     featured: true,
     keywords: [
       "e-commerce launch checklist",
@@ -152,7 +158,7 @@ export const posts = [
     date: "Apr 18, 2026",
     dateISO: "2026-04-18",
     readTime: "11 min read",
-    cover: "https://www.cyberworx.in/images/seo-infographic.JPG",
+    cover: seo,
     featured: false,
     keywords: [
       "local SEO Ahmedabad",
@@ -196,7 +202,7 @@ export const posts = [
     date: "Apr 10, 2026",
     dateISO: "2026-04-10",
     readTime: "6 min read",
-    cover: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1600&auto=format&fit=crop&q=80",
+    cover: UIUX,
     featured: false,
     keywords: [
       "UI UX design mistakes",
@@ -237,7 +243,7 @@ export const posts = [
     date: "Apr 02, 2026",
     dateISO: "2026-04-02",
     readTime: "5 min read",
-    cover: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&auto=format&fit=crop&q=80",
+    cover: Branding,
     featured: false,
     keywords: [
       "startup branding",
@@ -278,7 +284,7 @@ export const posts = [
     date: "Mar 28, 2026",
     dateISO: "2026-03-28",
     readTime: "8 min read",
-    cover: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&auto=format&fit=crop&q=80",
+    cover: Mobile,
     featured: false,
     keywords: [
       "mobile app vs PWA",

@@ -11,7 +11,7 @@ export default function BlogCard({ post, variant = 'default', index }) {
           src={post.cover}
           alt=""
           loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:opacity-55 group-hover:scale-105 transition-all duration-700"
+          className="absolute inset-0 w-full h-full object-contain opacity-65 group-hover:opacity-55 group-hover:scale-105 transition-all duration-700"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black via-black/50 to-black/10" />
         {typeof index === 'number' && (
@@ -48,7 +48,7 @@ export default function BlogCard({ post, variant = 'default', index }) {
           src={post.cover}
           alt=""
           loading="lazy"
-          className="w-24 h-24 md:w-28 md:h-28 object-cover rounded-lg shrink-0"
+          className="w-24 h-24 md:w-28 md:h-28 object-contain rounded-lg shrink-0"
         />
         <div className="min-w-0">
           <span className="text-xs text-brand font-medium">{post.category}</span>
@@ -73,7 +73,7 @@ export default function BlogCard({ post, variant = 'default', index }) {
           src={post.cover}
           alt=""
           loading="lazy"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
         />
         {typeof index === 'number' && (
           <span className="absolute top-4 left-4 num-badge text-2xl font-light text-white drop-shadow-lg">

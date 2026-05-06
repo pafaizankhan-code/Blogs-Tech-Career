@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logoUrl from '../assets/logo.jpg'
+import logoUrl from '../assets/logo.png'
 
 /**
  * Tech Career IT Solution LLP — official logo lockup.
@@ -11,17 +11,22 @@ import logoUrl from '../assets/logo.jpg'
 export default function Logo({ variant = 'dark', size = 'md', className = '' }) {
   const onLight = variant === 'light' || variant === 'footer'
 
+  // Logo is wide (2172x724 ≈ 3:1), so set height only and let width auto-scale
   const imgSize = {
-    sm: 'h-6 md:h-7',
-    md: 'h-8 md:h-9',
-    lg: 'h-10 md:h-12',
-  }[size]
+    sm: 'h-10 md:h-12',
+    md: 'h-14 md:h-16',
+    lg: 'h-20 md:h-24',
+    xl: 'h-28 md:h-32',
+    '2xl': 'h-32 md:h-40',
+  }[size] || 'h-14 md:h-16'
 
   const padding = {
     sm: 'px-2.5 py-1.5',
     md: 'px-3 py-2',
     lg: 'px-4 py-2.5',
-  }[size]
+    xl: 'px-5 py-3',
+    '2xl': 'px-6 py-3.5',
+  }[size] || 'px-3 py-2'
 
   const inner = (
     <img
