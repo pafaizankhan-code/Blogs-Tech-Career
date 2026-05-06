@@ -24,13 +24,43 @@ export const DEFAULT_KEYWORDS = [
 
 export const DEFAULT_OG_IMAGE = Custom;
 
+/**
+ * Central map of all main-site URLs (techcareer.site).
+ * Mirrors the routes defined in techcareer.site/src/App.jsx.
+ * Update here once if main-site routes ever change.
+ */
+export const SITE_LINKS = {
+  home: MAIN_SITE,
+  about: `${MAIN_SITE}about`,
+  services: `${MAIN_SITE}services`,
+  portfolio: `${MAIN_SITE}portfolio`,
+  careers: `${MAIN_SITE}careers`,
+  contact: `${MAIN_SITE}contact`,
+  privacy: `${MAIN_SITE}privacy`,
+  terms: `${MAIN_SITE}terms`,
+  cookies: `${MAIN_SITE}cookies`,
+  sitemap: `${MAIN_SITE}sitemap`,
+  // Service detail pages
+  webDevelopment: `${MAIN_SITE}services/web-development`,
+  ecommerce: `${MAIN_SITE}services/ecommerce`,
+  mobileApps: `${MAIN_SITE}services/mobile-apps`,
+  customSoftware: `${MAIN_SITE}services/custom-software`,
+  hrms: `${MAIN_SITE}services/hrms`,
+  uiUxDesign: `${MAIN_SITE}services/ui-ux-design`,
+  brandIdentity: `${MAIN_SITE}services/brand-identity`,
+  digitalMarketing: `${MAIN_SITE}services/digital-marketing`,
+  paidAds: `${MAIN_SITE}services/paid-ads`,
+  socialMedia: `${MAIN_SITE}services/social-media`,
+  careRetainer: `${MAIN_SITE}services/care-retainer`,
+};
+
 export const SERVICE_LINKS = [
-  { label: "Web Development", href: "https://techcareer.site/web-development" },
-  { label: "E-commerce Stores", href: "https://techcareer.site/ecommerce" },
-  { label: "UI/UX Design", href: "https://techcareer.site/ui-ux-design" },
-  { label: "Mobile Apps", href: "https://techcareer.site/mobile-apps" },
-  { label: "Digital Marketing", href: "https://techcareer.site/digital-marketing" },
-  { label: "Branding", href: "https://techcareer.site/branding" },
+  { label: "Web Development", href: SITE_LINKS.webDevelopment },
+  { label: "E-commerce Stores", href: SITE_LINKS.ecommerce },
+  { label: "UI/UX Design", href: SITE_LINKS.uiUxDesign },
+  { label: "Mobile Apps", href: SITE_LINKS.mobileApps },
+  { label: "Digital Marketing", href: SITE_LINKS.digitalMarketing },
+  { label: "Branding", href: SITE_LINKS.brandIdentity },
 ];
 
 export const CATEGORIES = [
@@ -75,7 +105,7 @@ export const posts = [
       <p>Templates are great for validating an idea. They give you a presentable face on the internet within a weekend, and most modern themes are responsive out of the box. The trade-off is identity: thousands of businesses worldwide are running the exact same theme, often with minor color tweaks. Once you start scaling traffic, you also hit performance ceilings that no plugin can fully solve.</p>
 
       <h2>When custom development is worth the investment</h2>
-      <p>If your website is a revenue engine — meaning leads, e-commerce sales, or product sign-ups depend on it — a custom build pays for itself within a year. You get tailored UX, faster page loads, conversion-tuned layouts, and an SEO foundation that ranks. Our <a href="https://techcareer.site/web-development">web development team in Ahmedabad</a> typically delivers custom websites in 4–8 weeks depending on scope.</p>
+      <p>If your website is a revenue engine — meaning leads, e-commerce sales, or product sign-ups depend on it — a custom build pays for itself within a year. You get tailored UX, faster page loads, conversion-tuned layouts, and an SEO foundation that ranks. Our <a href="https://techcareer.site/services/web-development">web development team in Ahmedabad</a> typically delivers custom websites in 4–8 weeks depending on scope.</p>
 
       <h3>Signs you've outgrown templates</h3>
       <ul>
@@ -113,13 +143,13 @@ export const posts = [
       "online store SEO",
     ],
     content: `
-      <p>An e-commerce launch is not about going live — it's about going live <em>without losing the first 1,000 visitors</em>. Over the years our team at <a href="https://techcareer.site/ecommerce">Tech Career IT Solutions</a> has shipped enough Shopify and WooCommerce stores that we now run a non-negotiable pre-launch checklist for every project.</p>
+      <p>An e-commerce launch is not about going live — it's about going live <em>without losing the first 1,000 visitors</em>. Over the years our team at <a href="https://techcareer.site/services/ecommerce">Tech Career IT Solutions</a> has shipped enough Shopify and WooCommerce stores that we now run a non-negotiable pre-launch checklist for every project.</p>
 
       <h2>1. Performance and Core Web Vitals</h2>
       <p>Every product page should pass Core Web Vitals on a real 4G connection — not just on a desktop dev machine. Compress hero images, lazy-load below-the-fold content, and use a CDN. We aim for under 2.5s LCP on the catalog page.</p>
 
       <h2>2. Mobile-first checkout</h2>
-      <p>70%+ of Indian e-commerce traffic is mobile. If your checkout requires more than three thumb-taps to complete, you'll bleed conversions. Our <a href="https://techcareer.site/ui-ux-design">UI/UX team</a> redesigns checkouts based on real heatmap data, not assumptions.</p>
+      <p>70%+ of Indian e-commerce traffic is mobile. If your checkout requires more than three thumb-taps to complete, you'll bleed conversions. Our <a href="https://techcareer.site/services/ui-ux-design">UI/UX team</a> redesigns checkouts based on real heatmap data, not assumptions.</p>
 
       <h2>3. Payment gateway redundancy</h2>
       <p>Don't depend on a single payment provider. We always set up at least two — typically Razorpay + Stripe — so if one fails during peak traffic, sales don't stop.</p>
@@ -143,7 +173,7 @@ export const posts = [
       <blockquote>Launch day is the start of the work, not the end. Plan the first 30 days as carefully as you planned the build.</blockquote>
 
       <h2>What separates a good launch from a great one</h2>
-      <p>Marketing readiness. The store can be flawless, but if your <a href="https://techcareer.site/digital-marketing">digital marketing engine</a> isn't warmed up — Meta ads, Google Shopping, organic content — you're launching to silence. We pair every e-commerce build with a 90-day growth plan.</p>
+      <p>Marketing readiness. The store can be flawless, but if your <a href="https://techcareer.site/services/digital-marketing">digital marketing engine</a> isn't warmed up — Meta ads, Google Shopping, organic content — you're launching to silence. We pair every e-commerce build with a 90-day growth plan.</p>
 
       <p>Want our team to audit your store before you go live? <a href="https://techcareer.site/contact">Talk to us at techcareer.site</a>.</p>
     `,
@@ -173,7 +203,7 @@ export const posts = [
       <p>Experience, Expertise, Authoritativeness, Trust. Google reads your About page, your author bios, your reviews, and your real-world signals (NAP consistency, local citations) more carefully than ever. If you're claiming to be the "best web development agency in Ahmedabad," your site better prove it.</p>
 
       <h2>Intent matching beats keyword stuffing</h2>
-      <p>"Web designer near me" and "best agency for SaaS landing page" need very different content. Map every page to a single intent. Our <a href="https://techcareer.site/digital-marketing">digital marketing team</a> uses a four-layer intent model — informational, commercial, transactional, navigational — to decide what each URL should target.</p>
+      <p>"Web designer near me" and "best agency for SaaS landing page" need very different content. Map every page to a single intent. Our <a href="https://techcareer.site/services/digital-marketing">digital marketing team</a> uses a four-layer intent model — informational, commercial, transactional, navigational — to decide what each URL should target.</p>
 
       <h3>Quick wins for any service site</h3>
       <ul>
@@ -217,7 +247,7 @@ export const posts = [
       <p>"Innovating tomorrow's solutions today" tells me nothing. Your hero needs to answer three questions in 5 seconds: what you do, who it's for, what to do next. Period.</p>
 
       <h2>2. CTA buttons that hide</h2>
-      <p>If your primary call-to-action looks like every other element on the page, it isn't a CTA — it's decoration. Use the <a href="https://techcareer.site/ui-ux-design">brand color reserved exclusively for actions</a>.</p>
+      <p>If your primary call-to-action looks like every other element on the page, it isn't a CTA — it's decoration. Use the <a href="https://techcareer.site/services/ui-ux-design">brand color reserved exclusively for actions</a>.</p>
 
       <h2>3. Typography that fights itself</h2>
       <p>Too many fonts, inconsistent sizes, line lengths over 90 characters. Pick a serif/sans pairing and a modular scale, then stick to it everywhere.</p>
@@ -252,7 +282,7 @@ export const posts = [
       "branding Ahmedabad",
     ],
     content: `
-      <p>Most early-stage founders treat branding as something you do "later" — after product, after launch, after revenue. That's a mistake we see every week at <a href="https://techcareer.site/branding">Tech Career's branding studio</a>.</p>
+      <p>Most early-stage founders treat branding as something you do "later" — after product, after launch, after revenue. That's a mistake we see every week at <a href="https://techcareer.site/services/brand-identity">Tech Career's branding studio</a>.</p>
 
       <h2>Branding is a system, not a logo</h2>
       <p>A logo is the smallest part of branding. The system is what your customer sees consistently across your website, invoices, packaging, and social. Without that system, you look unprofessional even if every individual asset is fine.</p>
@@ -269,7 +299,7 @@ export const posts = [
       <blockquote>Consistency over perfection. Every time.</blockquote>
 
       <h2>When to invest more</h2>
-      <p>After product-market fit, before scaling marketing spend. That's the sweet spot. Premature investment burns cash; late investment burns trust. Our team builds <a href="https://techcareer.site/branding">complete brand identities</a> for early-stage and growth-stage companies in 2-4 weeks.</p>
+      <p>After product-market fit, before scaling marketing spend. That's the sweet spot. Premature investment burns cash; late investment burns trust. Our team builds <a href="https://techcareer.site/services/brand-identity">complete brand identities</a> for early-stage and growth-stage companies in 2-4 weeks.</p>
 
       <p>If you're not sure where you stand, <a href="https://techcareer.site/contact">our team can review your current brand</a> and tell you honestly.</p>
     `,
@@ -293,7 +323,7 @@ export const posts = [
       "React Native development",
     ],
     content: `
-      <p>"Should I build a mobile app or a PWA?" is one of the most common questions founders ask us at <a href="https://techcareer.site/mobile-apps">Tech Career's mobile development team</a>. The honest answer rarely matches what they expect.</p>
+      <p>"Should I build a mobile app or a PWA?" is one of the most common questions founders ask us at <a href="https://techcareer.site/services/mobile-apps">Tech Career's mobile development team</a>. The honest answer rarely matches what they expect.</p>
 
       <h2>What PWAs are great at</h2>
       <p>PWAs (Progressive Web Apps) are excellent for content sites, light commerce, and tools where the user starts in a browser. They install in seconds, don't need app store approval, and update instantly.</p>

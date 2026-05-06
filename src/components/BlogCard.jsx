@@ -7,12 +7,7 @@ export default function BlogCard({ post, variant = 'default', index }) {
         to={`/blog/${post.slug}`}
         className="group block relative overflow-hidden rounded-3xl bg-ink h-110 md:h-140"
       >
-        <img
-          src={post.cover}
-          alt=""
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-contain opacity-65 group-hover:opacity-55 group-hover:scale-105 transition-all duration-700"
-        />
+       
         <div className="absolute inset-0 bg-linear-to-t from-black via-black/50 to-black/10" />
         {typeof index === 'number' && (
           <span className="absolute top-7 right-7 num-badge text-5xl md:text-6xl font-light text-white/90">
@@ -73,13 +68,9 @@ export default function BlogCard({ post, variant = 'default', index }) {
           src={post.cover}
           alt=""
           loading="lazy"
-          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain group- transition-transform duration-500"
         />
-        {typeof index === 'number' && (
-          <span className="absolute top-4 left-4 num-badge text-2xl font-light text-white drop-shadow-lg">
-            0{index + 1}
-          </span>
-        )}
+       
       </div>
       <div className="p-6 flex-1 flex flex-col">
         <div className="flex items-center gap-2 text-xs mb-3">

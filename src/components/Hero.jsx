@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { posts, CATEGORIES, MAIN_SITE } from '../data/posts'
+import { posts, CATEGORIES, MAIN_SITE, SITE_LINKS } from '../data/posts'
 import BannerCard from './BannerCard'
 import logoUrl from '../assets/logo.png'
 
@@ -35,18 +35,7 @@ export default function Hero() {
         <div className="relative max-w-7xl mx-auto px-5 lg:px-8 pt-3 md:pt-4">
           {/* Top bar: brand + Hire CTA */}
           <div className="flex items-center justify-between mb-28 md:mb-28 mt-5">
-            <Link
-              to="/"
-              className="inline-flex items-center hover:opacity-85 transition"
-              aria-label="Tech Career IT Solution LLP — Home"
-            >
-              <img
-                src={logoUrl}
-                alt="Tech Career IT Solution LLP"
-                className="h-16 md:h-18 w-auto select-none"
-                draggable={false}
-              />
-            </Link>
+          <div></div>
             <a
               href={`${MAIN_SITE}contact`}
               target="_blank"
@@ -165,7 +154,7 @@ export default function Hero() {
             <span className="font-medium tracking-[0.2em] uppercase">We write about</span>
             <span aria-hidden>/</span>
             <a
-              href={`${MAIN_SITE}web-development`}
+              href={SITE_LINKS.webDevelopment}
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition text-sm"
@@ -174,7 +163,7 @@ export default function Hero() {
             </a>
             <span aria-hidden>·</span>
             <a
-              href={`${MAIN_SITE}ecommerce`}
+              href={SITE_LINKS.ecommerce}
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition text-sm"
@@ -183,7 +172,7 @@ export default function Hero() {
             </a>
             <span aria-hidden>·</span>
             <a
-              href={`${MAIN_SITE}digital-marketing`}
+              href={SITE_LINKS.digitalMarketing}
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition text-sm"
@@ -192,7 +181,7 @@ export default function Hero() {
             </a>
             <span aria-hidden>·</span>
             <a
-              href={`${MAIN_SITE}ui-ux-design`}
+              href={SITE_LINKS.uiUxDesign}
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition text-sm"
@@ -201,7 +190,7 @@ export default function Hero() {
             </a>
             <span aria-hidden>·</span>
             <a
-              href={`${MAIN_SITE}branding`}
+              href={SITE_LINKS.brandIdentity}
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition text-sm"
